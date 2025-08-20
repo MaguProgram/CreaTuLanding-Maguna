@@ -4,15 +4,25 @@ const Navegador = () => {
 
     return (
         <nav>
-            <ol className='navegador'>
-                <img src='logoTienda.png'></img>
-                <a href=''>BUSCAR</a>
-                <a href=''>LIBROS</a>
-                <a href=''>AUTORES</a>
-                <a href=''>
-                    <CarritoWidget />
-                </a>
-            </ol>
+            <ul className='navegador'>
+                <li>
+                    <img src='logoTienda.png'></img>
+                </li>
+                <li>
+                    <a href=''>BUSCAR</a>
+                </li>
+                <li>
+                    <a href=''>LIBROS</a>
+                </li>
+                <li>
+                    <a href=''>AUTORES</a>
+                </li>
+                <li>
+                    <a href=''>
+                        <CarritoWidget />
+                    </a>
+                </li>
+            </ul>
         </nav>
     )
 }

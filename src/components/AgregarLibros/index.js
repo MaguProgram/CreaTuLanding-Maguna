@@ -1,5 +1,7 @@
+
 const AgregarLibro = (props) => {
     const { nombre, autor, id, type } = props
+
 
     return (
         <>
@@ -17,5 +19,6 @@ const AgregarLibro = (props) => {
         </>
     )
 };
+
 
 export default AgregarLibro;
