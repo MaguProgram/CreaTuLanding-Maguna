@@ -1,5 +1,4 @@
 
-
 const FetchApi = () => {
     fetch('https://openlibrary.org/search.json?q={tu-termino-de-busqueda}')
         .then((response) => {
@@ -11,7 +10,6 @@ const FetchApi = () => {
 
     return (
         <div>
-            <button onClick={FetchApi}>Fetch data</button>
         </div>
     );
 
