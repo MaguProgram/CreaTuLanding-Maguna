@@ -5,7 +5,7 @@ const BuscarLibros = () => {
     const [libros, setLibros] = useState([]);
 
     //  Estado para el término de búsqueda del usuario
-    const [terminoBusqueda, setTerminoBusqueda] = useState('react'); // Valor inicial de prueba
+    const [terminoBusqueda, setTerminoBusqueda] = useState(''); // Valor inicial de prueba
 
     //  Función para hacer la llamada a la API
     const buscarLibros = (query) => {

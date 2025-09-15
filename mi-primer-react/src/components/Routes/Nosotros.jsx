@@ -4,7 +4,7 @@ const Nosotros = () => {
     return (
         <div>
             <h1>BIENVENIDOS LECTORES 👩‍🏫👨‍🏫!!!</h1>
-            <p>Sumérgete en un universo de historias, conocimientos y aventuras con nuestra cuidada selección de libros. En [Nombre de tu tienda], creemos que cada libro es una puerta a un nuevo mundo, y estamos aquí para ayudarte a encontrar la llave perfecta.
+            <p>Sumérgete en un universo de historias, conocimientos y aventuras con nuestra cuidada selección de libros. En LIBRIFY, creemos que cada libro es una puerta a un nuevo mundo, y estamos aquí para ayudarte a encontrar la llave perfecta.
 
                 ¿Qué nos hace especiales?
                 Historias para todos: Desde las novelas más vendidas hasta joyas literarias ocultas, nuestro catálogo está lleno de títulos para cada tipo de lector.

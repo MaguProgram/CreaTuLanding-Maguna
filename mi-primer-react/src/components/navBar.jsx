@@ -8,14 +8,14 @@ const Navegador = () => {
             <ul className='navegador'>
                 <li>
                     <Link to='/'>
-                        <img src='logoTienda.png' alt='Logo Tienda' />
+                        <img src='../logoTienda.png' alt='Logo Tienda' />
                     </Link>
                 </li>
                 <li>
                     <Link to='/buscar'>Buscar</Link>
                 </li>
                 <li>
-                    <Link to='/masLeidos'>TOP 10 Libros</Link>
+                    <Link to='/masLeidos'>Agregar Libros</Link>
                 </li>
                 <li>
                     <Link to='/autores'>Autores</Link>
