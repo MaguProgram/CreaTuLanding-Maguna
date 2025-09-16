@@ -12,13 +12,13 @@ const Navegador = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link to='/'>Inicio</Link>
+                </li>
+                <li>
                     <Link to='/buscar'>Buscar</Link>
                 </li>
                 <li>
                     <Link to='/masLeidos'>Agregar Libros</Link>
-                </li>
-                <li>
-                    <Link to='/autores'>Autores</Link>
                 </li>
                 <li>
                     <Link to='/nosotros'>Nosotros</Link>

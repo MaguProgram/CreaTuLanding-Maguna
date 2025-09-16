@@ -11,7 +11,9 @@ const AgregarLibro = (props) => {
             <input autor={autor} id={id} type={type} />
             <label>Identificador</label>
             <input id={id} type={type} />
-            <button class="agregarbtn">Agregar</button>
+            <div className="contenedor-boton">
+                <button className="agregarbtn">Agregar</button>
+            </div>
         </>
     )
 };
