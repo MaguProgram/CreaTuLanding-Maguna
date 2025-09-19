@@ -18,7 +18,10 @@ const Navegador = () => {
                     <Link to='/buscar'>Buscar</Link>
                 </li>
                 <li>
-                    <Link to='/masLeidos'>Agregar Libros</Link>
+                    <Link to='/masLeidos'>TOP 10</Link>
+                </li>
+                <li>
+                    <Link to='/autores'>Autores destacados</Link>
                 </li>
                 <li>
                     <Link to='/nosotros'>Nosotros</Link>

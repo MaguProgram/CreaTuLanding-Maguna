@@ -33,13 +33,12 @@ const BuscarLibros = () => {
     //  useEffect para realizar la búsqueda cuando el componente se carga
     useEffect(() => {
         buscarLibros(terminoBusqueda);
-    }, [terminoBusqueda]); // El efecto se ejecuta cada vez que el terminoBusqueda cambia
+    }, [terminoBusqueda]);
 
     return (
         <div>
             <h1>Catálogo de Libros</h1>
 
-            {/* Input de búsqueda para que el usuario escriba */}
             <input
                 type="text"
                 value={terminoBusqueda}

@@ -1,4 +1,4 @@
-import Item from './Item'; // Componente para cada producto individual
+import Item from './Item';
 
 const ItemList = ({ books }) => {
     return (

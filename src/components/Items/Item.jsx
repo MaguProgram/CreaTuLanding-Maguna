@@ -1,34 +1,20 @@
-// import { useState } from 'react';
-
-// const Item = ({ libro }) => {
-//     const [data, setData] = useState("Añadir al carrito");
-
-//     const handleAgregarLibro = () => {
-//         setData("¡Libro agregado!");
-//         console.log(`Se ha agregado el libro: ${libro.titulo}`);
-//     };
-
-//     return (
-//         <li>
-//             <img src={libro.imagen} alt={libro.titulo} />
-//             {libro.autor}
-//             <button onClick={handleAgregarLibro}>{data}</button>
-//         </li>
-//     );
-// };
-
-// export default Item;
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Items.css'; // Estilos para el componente Item
-
+import { useCart } from '../carrito/CartContext';
+import './Items.css';
 
 const Item = ({ book }) => {
-    // Asegúrate de que 'book' no sea undefined antes de acceder a sus propiedades
+    // hook para obtener la función addToCart
+    const { addToCart } = useCart();
+
     if (!book) {
-        return null; // O un componente de carga
+        return null;
     }
+
+    // Manejador de clic para el botón
+    const handleAddToCart = () => {
+        addToCart(book);
+    };
 
     return (
         <div className="item-card">
@@ -39,7 +25,12 @@ const Item = ({ book }) => {
                 <p className="item-price">${book.Precio}</p>
                 <p className="item-stock">Stock: {book.Stock ? "Disponible ✅" : "Agotado ❌"}</p>
 
-                {/* Usamos <Link> para navegar a la ruta de detalle */}
+                {book.Stock &&
+                    <button onClick={handleAddToCart} className="add-to-cart-button">
+                        Agregar al Carrito
+                    </button>
+                }
+
                 <Link to={`/item/${book.id}`} className="item-button">
                     Ver Detalle
                 </Link>

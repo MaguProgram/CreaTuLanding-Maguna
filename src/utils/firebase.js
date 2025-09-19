@@ -17,7 +17,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-const db = getFirestore(app);
+export const db = getFirestore(app);
 
 export async function getBookById() {
     const querySnapshot = await getDocs(collection(db, 'books'));
@@ -31,3 +31,4 @@ export async function getBookById() {
     // Retorna el array de libros
     return booksArray;
 }
+

@@ -1,19 +1,21 @@
-const AgregarLibro = (props) => {
-    const { nombre, autor, id, type } = props
+const AgregarLibro = () => {
 
     return (
         <>
-            <h2>Agregar Libro</h2>
-
-            <label>Nombre</label>
-            <input nombre={nombre} autor={autor} id={id} type={type} />
-            <label>Autor</label>
-            <input autor={autor} id={id} type={type} />
-            <label>Identificador</label>
-            <input id={id} type={type} />
-            <div className="contenedor-boton">
-                <button className="agregarbtn">Agregar</button>
-            </div>
+            <h1>BESTSELLER ✨</h1>
+            <h2>Los 10 libros más vendidos</h2>
+            <ol>
+                <li>El código Da Vinci - Dan Brown </li>
+                <li>El Alquimista - Paulo Coelho</li>
+                <li>Mr. Mercedes - Stephen King</li>
+                <li>Nacidos de la bruma - Brandon Sanderson</li>
+                <li>Orgullo y prejuicio - Jane Austen</li>
+                <li>1984 - George Orwell</li>
+                <li>El Principito - Antoine de Saint-Exupéry</li>
+                <li>Mi nombre es Emilia del Valle - Isabel Allende</li>
+                <li>La sombra del viento - Carlos Ruiz Zafón</li>
+                <li>Harry Potter y la piedra filosofal - J.K. Rowling</li>
+            </ol>
         </>
     )
 };
