@@ -3,7 +3,7 @@ const AgregarLibro = () => {
 
     return (
         <div>
-            <h2>Nuestras Sugerencias!! 📚</h2>
+            <h2>Nuestros Recomendados!! 📚</h2>
         </div>
     )
 };
