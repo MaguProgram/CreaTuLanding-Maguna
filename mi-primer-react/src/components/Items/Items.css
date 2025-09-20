@@ -1,0 +1,59 @@
+/* Estilos para la tarjeta del producto individual */
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.item-image {
+    width: 100%;
+    max-width: 200px;
+    /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.item-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.item-price {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.item-button {
+    background-color: #28a745;
+    /* Un color verde para el botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.item-button:hover {
+    background-color: #218838;
+    /* Un verde más oscuro al pasar el mouse */
+}
