@@ -18,7 +18,7 @@ const Item = ({ book }) => {
 
     return (
         <div className="item-card">
-            <img src={book.img} alt={book.Nombre} className="item-image" />
+            <img src={book.Imagen} alt={book.Nombre} className="item-image" />
             <div className="item-details">
                 <h3 className="item-title">{book.Nombre}</h3>
                 <h3 className="item-author">Autor: {book.Autor}</h3>

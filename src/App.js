@@ -9,7 +9,7 @@ import BuscarLibros from './components/Routes/index';
 import Nosotros from './components/Routes/Nosotros';
 import Autores from './components/Routes/Autores';
 import MasLeidos from './components/Routes/MasLeidos';
-import ListadoCarrito from './components/carrito/ListadoCarrito';
+import Cart from './components/carrito/Cart';
 import { CartProvider } from '../src/components/carrito/CartContext'
 import ItemDetail from '../src/components/Items/ItemDetail'; // Importa el nuevo componente
 
@@ -35,7 +35,7 @@ function App() {
             <Route path='/nosotros' element={<Nosotros />} />
             <Route path='/autores' element={<Autores />} />
             <Route path='/masLeidos' element={<MasLeidos />} />
-            <Route path='/carrito' element={<ListadoCarrito />} />
+            <Route path='/carrito' element={<Cart />} />
             <Route path="/item/:id" element={<ItemDetail />} />
 
             <Route path='/libro/:id' element={<ItemDetailContainer />} />

@@ -27,8 +27,8 @@
 }
 
 .cart-item-image {
-    width: 80px;
-    height: 100px;
+    width: 160px;
+    height: 200px;
     object-fit: cover;
     border-radius: 4px;
     margin-right: 20px;
@@ -36,6 +36,7 @@
 
 .cart-item-details {
     flex-grow: 1;
+
 }
 
 .cart-item-details h3 {
@@ -44,9 +45,23 @@
 }
 
 .cart-item-details p {
-    margin: 0;
+    margin: 10px 0;
     color: #555;
-    font-size: 14px;
+    font-size: 24px;
+}
+
+.total-text {
+    font-size: 30px;
+    color: #000000;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.item-subtotal {
+    font-size: 24px;
+    color: #000000;
+    margin-right: 20px;
+    font-weight: bold;
 }
 
 .cart-item button {
@@ -162,6 +177,33 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     z-index: 1000;
+}
+
+.text-lg {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: double underline;
+}
+
+.mt-4 {
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 1%;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+
+.cart-item button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    margin-left: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 /* Animación para el mensaje de confirmación */
